@@ -1,0 +1,82 @@
+/* estilos globales */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 75px;
+}
+
+
+/* estilos del header */
+
+header {
+    display: flex;
+    width: 100vw;
+    /*vw viewport width -> se refiere al ancho de la pantalla */
+    height: 10vh;
+    /*vh viewport height -> refiere al ALTO de la pantalla */
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 45%;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    margin: 0 10px;
+}
+
+
+/* OCULTAR ELEMENTOS EN CSS */
+
+
+/* OCULTA PERO SIGUE OCUPANDO ESPACIO -> Visibility:hidden; */
+
+.fa-bars {
+    font-size: 2rem;
+    visibility: hidden;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* QUERY */
+
+
+/*MAX WIDTH -> HASTA 700px*/
+
+
+/*MIN WIDTH -> DESDE 700px en adelante*/
+
+@media (max-width: 700px) {
+    header {
+        justify-content: space-between;
+    }
+    /* Agregar margin a los elementos del header */
+    nav {
+        display: none;
+    }
+    .fa-bars {
+        visibility: visible;
+    }
+}
+
+
+/* CONSIGNAS! */
+
+
+/* 1) Que cuando el header sea mobile, tenga un background-image 
+    2) Que cuando el header mida más de 900px, su contenido se vea de color azul 
+    3) Que cuando el header mida menos de 300px aparezca un mensaje que diga "agrandá la pantalla por favor!" y el resto de elementos se oculten */
